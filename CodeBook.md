@@ -15,15 +15,15 @@
 
 - Input Files (label data):
     "UCI HAR Dataset/activity_labels.txt",
-    "UCI HAR Dataset/features.txt",
+    "UCI HAR Dataset/features.txt"
 - Input Files (Calculated measures):
     "UCI HAR Dataset/train/X_train.txt",    
-    "UCI HAR Dataset/test/X_test.txt",
+    "UCI HAR Dataset/test/X_test.txt"
 - Input Files (environment-related setup data):
     "UCI HAR Dataset/train/y_train.txt",             
     "UCI HAR Dataset/test/y_test.txt",
     "UCI HAR Dataset/train/subject_train.txt",
-    "UCI HAR Dataset/test/subject_test.txt",
+    "UCI HAR Dataset/test/subject_test.txt"
 - combining X_train and X_test data sets to one (rbind)
 - searching for relevant columns representing "mean()" and "std()" (grep)
 - adding new column "activity" with activity names instead of just the ids
@@ -36,17 +36,18 @@
 3.) DICTIONARY OF THE DATA AS PREPARED FOR THE ANALYSIS
 
 activity    
-	WALKING
-	WALKING_UPSTAIRS
-	WALKING_DOWNSTAIRS
-	SITTING
-	STANDING
-	LAYING
+  - WALKING
+  - WALKING_UPSTAIRS
+  - WALKING_DOWNSTAIRS
+  - SITTING
+  - STANDING
+  - LAYING
 
 subject	
-	1..30 (id of a person)
+  - 1..30 (id of a person)
 
-the notation of following variables can be described for all:
+
+66 variables - name structure of the following variables
   - prefix "t" denotes time domain data, 
     prefix "f" denotes frequency domain signals coming from
     the Fast Fourier Transformation
