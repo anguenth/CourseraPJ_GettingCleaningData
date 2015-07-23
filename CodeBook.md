@@ -14,11 +14,11 @@
 2.) BUILDING THE RELEVANT DATA SET
 
 - Input Files:
-      General descriptive data 
+      a) General descriptive data: 
       "UCI HAR Dataset/activity_labels.txt"
       "UCI HAR Dataset/features.txt"
       
-      Calculated measures and environment-related setup data
+      b) Calculated measures and environment-related setup data:
       "UCI HAR Dataset/train/X_train.txt"    
       "UCI HAR Dataset/train/y_train.txt"             
       "UCI HAR Dataset/train/subject_train.txt"
