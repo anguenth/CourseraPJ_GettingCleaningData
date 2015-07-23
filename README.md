@@ -5,9 +5,10 @@ course project - get data, data management, mean on variables in multiple groups
 1. INTRODUCTION
 
   There is just one script (run_analysis.R) that analyses
-  data representing the forces while moving a mobile device.
+  data providing information about the forces occuring while moving 
+  a mobile device.
   The data are collected by 30 volunteers in different
-  activity scenarios where acceleration and gravity 
+  activity scenarios where acceleration and angular velocity 
   have been recorded in certain intervals.
 
 
