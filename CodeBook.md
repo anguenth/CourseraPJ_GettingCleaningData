@@ -13,18 +13,18 @@
 
 2.) BUILDING THE RELEVANT DATA SET
 
-- Input Files:
-      a) General descriptive data: 
-      "UCI HAR Dataset/activity_labels.txt"
-      "UCI HAR Dataset/features.txt"
+Input Files:
+- a) General descriptive data: 
+    "UCI HAR Dataset/activity_labels.txt"
+    "UCI HAR Dataset/features.txt"
       
-      b) Calculated measures and environment-related setup data:
-      "UCI HAR Dataset/train/X_train.txt"    
-      "UCI HAR Dataset/train/y_train.txt"             
-      "UCI HAR Dataset/train/subject_train.txt"
-      "UCI HAR Dataset/test/X_test.txt"
-      "UCI HAR Dataset/test/y_test.txt"
-      "UCI HAR Dataset/test/subject_test.txt"
+- b) Calculated measures and environment-related setup data:
+    "UCI HAR Dataset/train/X_train.txt"    
+    "UCI HAR Dataset/train/y_train.txt"             
+    "UCI HAR Dataset/train/subject_train.txt"
+    "UCI HAR Dataset/test/X_test.txt"
+    "UCI HAR Dataset/test/y_test.txt"
+    "UCI HAR Dataset/test/subject_test.txt"
 
 - combining X_train and X_test data sets to one (rbind)
 - searching for relevant columns representing "mean()" and "std()" (grep)
