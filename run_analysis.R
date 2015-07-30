@@ -51,9 +51,15 @@
 ## Insert additional information about activity and subject
       
       ## activity  (use descriptive names)
-      trainAct_name    <- merge(trainAct,actDescr,by.x="V1",by.y="V1",all.x=TRUE)  ## all.x=TRUE: left join
-      testAct_name     <- merge(testAct,actDescr, by.x="V1",by.y="V1",all.x=TRUE)  ## or: merge(testAct,actDescr)     
-      
+      ## !!! merge does not preserve the order !!!
+      ## "sort=FALSE" just prevents sorting afterwards, but "merge" first reorders first column by "by.x" and then
+      ## looks for any matches
+      ## testAct_name     <- merge(testAct,actDescr, by.x="V1",by.y="V1",all.x=TRUE,sort=FALSE)  ## or: merge(testAct,actDescr,sort=FALSE)     
+
+      library("plyr")
+      trainAct_name    <- join(trainAct,actDescr,by="V1", type = "left") 
+      testAct_name     <- join(testAct,actDescr,by="V1", type = "left") 
+
       xdata$activity   <- rbind(trainAct_name[2],testAct_name[2])[["V2"]]          ## [[]]: resolves to factor
       
       ## subject
@@ -84,6 +90,10 @@
       ## display the tidy data set
       df_tidyDataset 
 
-      
+
+## Check
+
+      ## table(xdata$subject,xdata$activity )
+      ## df_tidyDataset[1:3]
    
       
